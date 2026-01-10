@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aws-cfn-empty-template-stacks
+  description: Using the WaitConditionHandle to construct CloudFormation stacks without AWS resources
+  tags:
+    - aws
+    - aws
+  annotations:
+    displayName: Empty CloudFormation Stacks using WaitConditionHandle
+    github.com/project-slug: the-aeydr/aws-cfn-empty-template-stacks
+spec:
+  type: documentation
+  lifecycle: experimental

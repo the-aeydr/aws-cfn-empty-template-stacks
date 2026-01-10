@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you refer to this article, please cite it as below."
+
+version: 1.0.0
+date-released: 2023-07-12
+title: "Empty CloudFormation Stacks using WaitConditionHandle"
+url: "https://writing.aeydr.dev/notes/aws-cfn-empty-template-stacks"
+authors:
+- given-names: "aeydr"
+
+preferred-citation:
+  type: article
+  journal: "The Architectural Decision Record"
+  authors:
+  - given-names: "aeydr"
+
+  title: "Empty CloudFormation Stacks using WaitConditionHandle"
+  month: 07
+  year: 2023

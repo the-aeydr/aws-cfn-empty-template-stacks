@@ -1,0 +1,18 @@
+---
+# A CloudFormation Template that contains no resources, allowing for an "empty" CloudFormation stack to be created.
+
+# CloudFormation Stacks require at minimum one resource to be defined, and using the Custom::NullResource together 
+# with a Condition that always evaluates to False satisfies this requirement. This means we are not required by the CloudFormation Stack
+# to provision any "unnecessary" resources.
+AWSTemplateFormatVersion: "2010-09-09"
+
+# The condition HasNot will never evaluate to True, as `True` wil never be equal to `False`. This means any resource
+# that is conditionally created on HasNot, will never be created.
+Conditions:
+  HasNot:
+    Fn::Equals: [ 'True', 'False' ]
+
+Resources:
+  NullResource:
+    Type: 'Custom::NullResource'
+    Condition: HasNot
